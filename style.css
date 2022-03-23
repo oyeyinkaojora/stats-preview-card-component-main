@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@900&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@900&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@900&family=Inter:wght@100&family=Lexend+Deca&display=swap");
+
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+   max-width: 900px;
+   border-radius: 10px;
+   margin: 0 auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  background: hsl(244, 38%, 16%);
+}
+
+.left-side{
+   display: flex;
+   margin: 30px;
+   padding: 20px ;
+   flex-direction: column;
+   margin: 2em auto;
+   width: 70%;
+}
+
+.left-side p{
+   margin-top: 20px;
+   color: hsla(0, 0%, 100%, 0.75);
+   font-size: 10px;
+   line-height: 2;
+}
+
+.left-side h3{
+    margin-top: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.stats{
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;   
+}
+
+.stats h4{
+    color:hsl(0, 0%, 100%);
+}
+
+.stats h5{
+    color:hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+.stat1,
+.stat2,
+.stat3{
+    flex-direction: column;
+}
+
+.image{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.content-overlay {
+    background: hsl(277, 64%, 61%);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity:0.6;
+}
+
+@media (max-width:762px) {
+    .row{
+        grid-template-columns: 1fr;
+        
+    }
+}
